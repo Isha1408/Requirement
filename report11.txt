@@ -1,0 +1,110 @@
+﻿
+1.INTRODUCTION
+
+1.1 PREFACE
+
+This document contains the Software Requirements Specification (SRS) of a Project Management System for the College or University .
+The main aim of this project is to add functionality to the existing Management system in order to provide an online facility for managing and registering student accounts.
+
+1.2 INTENDED AUDIENCE AND READING SUGGESTIONS
+
+This project is a prototype for the College management system and it is restricted within the college premises. This has been implemented under the guidance of college professors. 
+This project is useful for the management team and as well as to the Students.
+
+1.3 PROJECT SCOPE
+
+The purpose of the online College management system is to ease College management and to create a convenient and easy-to-use application for Students, trying to build career in particular course.
+ We will have a database server supporting No. of Users in the college as well as no. of courses available. Above all, we hope to provide a comfortable user experience along with the best Courses available.
+
+2. OVERALL DESCRIPTION:-
+
+
+2.1 PRODUCT PERSPECTIVE:-
+The DataBase System Stores the follwing Information:-
+
+1. Student Details:-
+It includes personal information of the student like Student Id, name,Email address, phone number and Course. 
+This information may be used for keeping the records of the Student for any emergency or for any other kind of information.
+
+2.Course deatils:-
+It includes Course Id,Course name,Subject name(along with teacher name).
+
+3. Teacher Details:-
+It includes Teacher Id,Teacher name(along with their Subjects).
+
+
+2.2 PRODUCT FEATURES:-
+ There are three different users who will be using this product:
+a. Admin
+b.Teacher
+c.Student
+
+
+2.2.1 The features available to the Administrator are:-
+
+1.Can Create course and list of subject for each course.
+2.Can view the accounts.
+3.Can add/remove student and teachers.
+4.Can hide any kind of features from the both of users.
+5.Can access all the accounts of the faculty members/students.
+6.The administrator has the full fledged rights over the system.
+
+
+
+ 2.2.2 The features available to the Faculty members are:
+
+1. Should have access on visit students profiles (Only for his subject).
+2. Can view the list of student Along with the courses who have selected respective subject.
+3. The user interface must be customizable by the administrator
+
+2.2.3 The features available to the Students are:
+
+1. .Can Upload image and update Profile.
+2.Can view The different categories of Course available in their account.
+3.Can view list of subjects along with teachers for selected course.
+
+
+2.3 STIMULUS/RESPONSE SEQUENCES 
+
+2.3.1. Administrator:
+
+The administrator can Login andLogout. When the Administrator Logs into the system. The system will check for validity of login .
+If the Login and password are valid, the response to this action is the administrator will be able to modify, view, add, deleting and all other functions that canbe performed on the database.
+
+2.3.2.User :-
+
+ Each faculty member and student is assigned a unique identifier upon admission to the College. Both of them must know this. 
+This identifying key maps to all his/her registration record information in the main registration system. 
+
+
+2.4  ASSUMPTIONS AND DEPENDENCIES.
+
+ The product needs following third party product.
+
+1. Microsoft SQL server to store the database.
+
+2. Microsoft Visual Studio to develop the Product.
+
+
+3.  SOFTWARE INTERFACES
+
+Following are the software used for theCollege management online application. 
+
+1.Operating system:	
+We have chosen Windows operating system for its best support and user-friendliness.
+
+2.Database:-
+To save the flight records, passengers records we have chosen SQL+ database.
+
+3.ASP.net:	:-
+To implement the project we have chosen c# language  for its more interactive support.
+
+4. Web Server:-
+IIS (Internet Information Services (IIS) is a powerfulWeb server that provides a highly reliable, manageable, andscalable Web application infrastructure.
+
+ 
+4. SAFETY REQUIREMENTS
+
+There are different categories of users namely teachers,Administrator, and students etc. Depending upon the category of user the access rights are decided. 
+It means if the user is an administrator then he can be able to modify the data, delete,append etc.  All other users other than staff only have the rights to retrieve the basic information about the college from home page page.
+And also He/She can Also visit Aboutus and Contanct page.All user interfaces should be able to interact with the usermanagement module and a part of the interface must bededicated to the login/logout module
